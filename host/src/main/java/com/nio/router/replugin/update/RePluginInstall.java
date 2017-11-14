@@ -1,4 +1,4 @@
-package com.lzh.router.replugin.update;
+package com.nio.router.replugin.update;
 
 import android.content.Context;
 import android.content.Intent;

@@ -1,6 +1,6 @@
 <manifest
 
-    package="com.lzh.router.replugin.host">
+    package="com.nio.router.replugin.host">
 
     <application>
     </application>

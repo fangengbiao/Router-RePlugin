@@ -1,4 +1,4 @@
-package com.lzh.router.replugin.host;
+package com.nio.router.replugin.host;
 
 import android.app.Fragment;
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.text.TextUtils;
 
 import com.lzh.nonview.router.launcher.DefaultActivityLauncher;
-import com.lzh.router.replugin.core.RouterBridgeActivity;
+import com.nio.router.replugin.core.RouterBridgeActivity;
 import com.qihoo360.replugin.RePlugin;
 
 /**

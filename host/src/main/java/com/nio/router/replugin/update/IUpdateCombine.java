@@ -1,4 +1,4 @@
-package com.lzh.router.replugin.update;
+package com.nio.router.replugin.update;
 
 import org.lzh.framework.updatepluginlib.model.CheckEntity;
 

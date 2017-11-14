@@ -48,7 +48,7 @@ apply from: '../javadoc.gradle'
 //            groupId PROJ_GROUP
 //            artifactId 'router-plugin-core'
 //            packaging 'aar'
-//            version '1.0.0-SNAPSHOT'
+//            version '1.0.1-SNAPSHOT'
 //            description 'Router Plugin Core'
 //            developers {
 //                developer {

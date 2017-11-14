@@ -1,4 +1,4 @@
-package com.lzh.router.replugin.core;
+package com.nio.router.replugin.core;
 
 import android.app.Activity;
 import android.content.Context;

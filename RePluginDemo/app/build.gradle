@@ -24,7 +24,7 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
 
     annotationProcessor "com.github.yjfnypeu.Router:router-compiler:${ROUTER_VERSION}"
-//    annotationProcessor "com.jakewharton:butterknife-compiler:${ButterKnife_version}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${ButterKnife_version}"
 //
     compile "com.github.yjfnypeu.Parceler:api:${PARCELER_VERSION}"
     compile "org.lzh.nonview.updateplugin:UpdatePlugin:${UpdatePlugin_version}"
@@ -37,7 +37,7 @@ dependencies {
 //        compile "com.github.yjfnypeu.Router-RePlugin:host:${Router_RePlugin_version}"
 //    }
 
-    compile ('com.nio.vom:router-plugin-host:1.0.0-SNAPSHOT@aar'){
+    compile ('com.nio.vom:router-replugin-host:1.0.1-SNAPSHOT@aar'){
         transitive true
     }
 //    provided "com.github.yjfnypeu.Parceler:api:${PARCELER_VERSION}"

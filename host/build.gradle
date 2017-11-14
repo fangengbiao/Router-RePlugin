@@ -24,7 +24,7 @@ android {
 dependencies {
 //    compile project(':core')
 
-    compile 'com.nio.vom:router-plugin-core:1.0.0-SNAPSHOT@aar'
+    compile 'com.nio.vom:router-plugin-core:1.0.1-SNAPSHOT@aar'
 
     provided 'com.android.support:support-v4:25.3.1'// 提供用于兼容ActivityLauncher编写
 
@@ -34,7 +34,7 @@ dependencies {
 //    annotationProcessor "com.github.yjfnypeu.Router:router-compiler:${ROUTER_VERSION}"
 //    annotationProcessor "com.jakewharton:butterknife-compiler:${ButterKnife_version}"
 
-    compile "com.github.yjfnypeu.Parceler:api:${PARCELER_VERSION}"
+    provided "com.github.yjfnypeu.Parceler:api:${PARCELER_VERSION}"
     compile "org.lzh.nonview.updateplugin:UpdatePlugin:${UpdatePlugin_version}"
 
 
@@ -55,12 +55,12 @@ apply from: '../javadoc.gradle'
 //        }
 //
 //        pom.project {
-//            name "Router Plugin host"
+//            name "Router RePlugin host"
 //            group PROJ_GROUP
 //            groupId PROJ_GROUP
-//            artifactId 'router-plugin-host'
+//            artifactId 'router-replugin-host'
 //            packaging 'aar'
-//            version '1.0.0-SNAPSHOT'
+//            version '1.0.1-SNAPSHOT'
 //            description 'Router Plugin Host'
 //            developers {
 //                developer {

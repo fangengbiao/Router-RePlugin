@@ -24,7 +24,7 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
 
     annotationProcessor "com.github.yjfnypeu.Router:router-compiler:${ROUTER_VERSION}"
-    annotationProcessor "com.jakewharton:butterknife-compiler:${ButterKnife_version}"
+//    annotationProcessor "com.jakewharton:butterknife-compiler:${ButterKnife_version}"
 //
     compile "com.github.yjfnypeu.Parceler:api:${PARCELER_VERSION}"
     compile "org.lzh.nonview.updateplugin:UpdatePlugin:${UpdatePlugin_version}"

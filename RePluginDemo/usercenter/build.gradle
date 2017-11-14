@@ -30,10 +30,14 @@ dependencies {
     compile "com.jakewharton:butterknife:${ButterKnife_version}"
     testCompile 'junit:junit:4.12'
 
-    if (useLocal) {
-        compile project(':plugin')
-    } else {
-        compile "com.github.yjfnypeu.Router-RePlugin:plugin:${Router_RePlugin_version}"
+//    if (useLocal) {
+//        compile project(':plugin')
+//    } else {
+//        compile "com.github.yjfnypeu.Router-RePlugin:plugin:${Router_RePlugin_version}"
+//    }
+
+    compile ('com.nio.vom:router-plugin-plugin:1.0.0-SNAPSHOT@aar'){
+        transitive true
     }
 }
 

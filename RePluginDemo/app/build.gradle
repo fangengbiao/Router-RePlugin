@@ -25,15 +25,22 @@ dependencies {
 
     annotationProcessor "com.github.yjfnypeu.Router:router-compiler:${ROUTER_VERSION}"
     annotationProcessor "com.jakewharton:butterknife-compiler:${ButterKnife_version}"
-
+//
     compile "com.github.yjfnypeu.Parceler:api:${PARCELER_VERSION}"
     compile "org.lzh.nonview.updateplugin:UpdatePlugin:${UpdatePlugin_version}"
     compile 'com.alibaba:fastjson:1.1.61.android'
     compile 'com.android.support:support-v4:25.3.1'
 
-    if (useLocal) {
-        compile project(':host')
-    } else {
-        compile "com.github.yjfnypeu.Router-RePlugin:host:${Router_RePlugin_version}"
+//    if (useLocal) {
+//        compile project(':host')
+//    } else {
+//        compile "com.github.yjfnypeu.Router-RePlugin:host:${Router_RePlugin_version}"
+//    }
+
+    compile ('com.nio.vom:router-plugin-host:1.0.0-SNAPSHOT@aar'){
+        transitive true
     }
+//    provided "com.github.yjfnypeu.Parceler:api:${PARCELER_VERSION}"
+//    compile "com.qihoo360.replugin:replugin-plugin-lib:${RePlugin_version}"
+//    compile "com.github.yjfnypeu.Router:router-api:${ROUTER_VERSION}"
 }

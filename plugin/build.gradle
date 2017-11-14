@@ -21,7 +21,9 @@ android {
 }
 
 dependencies {
-    compile project(':core')
+//    compile project(':core')
+
+    compile 'com.nio.vom:router-plugin-core:1.0.0-SNAPSHOT@aar'
 
     provided 'com.qihoo360.replugin:replugin-plugin-lib:2.1.7'
     provided "com.github.yjfnypeu.Parceler:api:${PARCELER_VERSION}"

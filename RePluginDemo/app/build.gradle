@@ -26,7 +26,7 @@ dependencies {
     annotationProcessor "com.github.yjfnypeu.Router:router-compiler:${ROUTER_VERSION}"
     annotationProcessor "com.jakewharton:butterknife-compiler:${ButterKnife_version}"
 //
-    compile "com.github.yjfnypeu.Parceler:api:${PARCELER_VERSION}"
+//    compile "com.github.yjfnypeu.Parceler:api:${PARCELER_VERSION}"
     compile "org.lzh.nonview.updateplugin:UpdatePlugin:${UpdatePlugin_version}"
     compile 'com.alibaba:fastjson:1.1.61.android'
     compile 'com.android.support:support-v4:25.3.1'
@@ -38,6 +38,9 @@ dependencies {
 //    }
 
     compile ('com.nio.vom:router-replugin-host:1.0.1-SNAPSHOT@aar'){
+        transitive true
+    }
+    compile ('com.nio.vom:router-replugin-parceler-api:1.0.1-SNAPSHOT@aar'){
         transitive true
     }
 //    provided "com.github.yjfnypeu.Parceler:api:${PARCELER_VERSION}"

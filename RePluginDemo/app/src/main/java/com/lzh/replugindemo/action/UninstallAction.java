@@ -4,7 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.lzh.compiler.parceler.annotation.Arg;
+import com.nio.compiler.parceler.annotation.Arg;
 import com.lzh.nonview.router.anno.RouterRule;
 import com.lzh.nonview.router.route.ActionSupport;
 import com.qihoo360.replugin.RePlugin;

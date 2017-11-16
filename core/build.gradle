@@ -23,8 +23,11 @@ android {
 
 dependencies {
     provided "com.qihoo360.replugin:replugin-plugin-lib:${RePlugin_version}"
-    provided "com.github.yjfnypeu.Parceler:api:${PARCELER_VERSION}"
+//    provided "com.github.yjfnypeu.Parceler:api:${PARCELER_VERSION}"
     provided "com.github.yjfnypeu.Router:router-api:${ROUTER_VERSION}"
+
+//    provided "com.nio.vom:router-api:1.0.1-SNAPSHOT@aar"
+    provided 'com.nio.vom:router-replugin-parceler-api:1.0.1-SNAPSHOT@aar'
 //    compile 'com.alibaba:fastjson:1.1.61.android'
 }
 
@@ -46,10 +49,10 @@ apply from: '../javadoc.gradle'
 //            name "Router Plugin Core"
 //            group PROJ_GROUP
 //            groupId PROJ_GROUP
-//            artifactId 'router-plugin-core'
+//            artifactId 'router-replugin-core'
 //            packaging 'aar'
-//            version '1.0.1-SNAPSHOT'
-//            description 'Router Plugin Core'
+//            version '1.0.2-SNAPSHOT'
+//            description 'Router RePlugin Core'
 //            developers {
 //                developer {
 //                    id DEVELOPER_ID

@@ -25,19 +25,19 @@ apply plugin: 'replugin-plugin-gradle'
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 //    if (useLocal) {
-//        compile project(':plugin')
+        compile project(':plugin')
 //    } else {
 //        compile "com.github.yjfnypeu.Router-RePlugin:plugin:${Router_RePlugin_version}"
 //    }
 
-    compile ('com.nio.vom:router-replugin-plugin:1.0.1-SNAPSHOT@aar'){
-        transitive true
-    }
+//    compile ('com.nio.vom:router-replugin-plugin:1.0.1-SNAPSHOT@aar'){
+//        transitive true
+//    }
 
     annotationProcessor "com.github.yjfnypeu.Router:router-compiler:${ROUTER_VERSION}"
     annotationProcessor "com.jakewharton:butterknife-compiler:${ButterKnife_version}"
 //    compile project(':stub')
-    compile "com.github.yjfnypeu.Parceler:api:${PARCELER_VERSION}"
+//    provided 'com.nio.vom:router-replugin-parceler-api:1.0.1-SNAPSHOT@aar'
     compile "com.jakewharton:butterknife:${ButterKnife_version}"
 }
 

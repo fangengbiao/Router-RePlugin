@@ -5,10 +5,12 @@ import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.lzh.nonview.router.anno.RouterRule;
 import com.nio.compiler.parceler.Parceler;
 import com.nio.compiler.parceler.annotation.Arg;
-import com.lzh.nonview.router.anno.RouterRule;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 @RouterRule("login")
@@ -19,8 +21,8 @@ public class LoginActivity extends Activity {
     @Arg
     String password;
 
-//    @BindView(R.id.username)
-//    EditText name;
+    @BindView(R.id.username)
+    EditText name;
 //    @BindView(R.id.password)
     EditText word;
 
@@ -29,7 +31,7 @@ public class LoginActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         Parceler.toEntity(this, getIntent());
-//        ButterKnife.bind(this);
+        ButterKnife.bind(this);
 //        name.setText(username);
 //        word.setText(password);
 

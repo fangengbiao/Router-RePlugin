@@ -36,7 +36,11 @@ dependencies {
 //        transitive true
 //    }
 
-    annotationProcessor "com.github.yjfnypeu.Router:router-compiler:${ROUTER_VERSION}"
+//    annotationProcessor "com.github.yjfnypeu.Router:router-compiler:${ROUTER_VERSION}"
+    annotationProcessor ('com.nio.vom:router-compiler:1.0.1-SNAPSHOT@jar'){
+        transitive true
+    }
+
     annotationProcessor "com.jakewharton:butterknife-compiler:${ButterKnife_version}"
     compile "com.jakewharton:butterknife:${ButterKnife_version}"
 

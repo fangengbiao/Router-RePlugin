@@ -23,7 +23,10 @@ apply plugin: 'replugin-host-gradle'
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
 
-    annotationProcessor "com.github.yjfnypeu.Router:router-compiler:${ROUTER_VERSION}"
+//    annotationProcessor "com.github.yjfnypeu.Router:router-compiler:${ROUTER_VERSION}"
+    annotationProcessor ('com.nio.vom:router-compiler:1.0.1-SNAPSHOT@jar'){
+        transitive true
+    }
     annotationProcessor "com.jakewharton:butterknife-compiler:${ButterKnife_version}"
 //
 //    compile "com.github.yjfnypeu.Parceler:api:${PARCELER_VERSION}"

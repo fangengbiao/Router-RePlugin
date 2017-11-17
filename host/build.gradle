@@ -29,7 +29,14 @@ dependencies {
     provided 'com.android.support:support-v4:25.3.1'// 提供用于兼容ActivityLauncher编写
 
     compile "com.qihoo360.replugin:replugin-host-lib:${RePlugin_version}"
-    compile "com.github.yjfnypeu.Router:router-host:${ROUTER_VERSION}"
+//    compile "com.github.yjfnypeu.Router:router-host:${ROUTER_VERSION}"
+//    compile "com.github.yjfnypeu.Router:router-host:${ROUTER_VERSION}"
+    compile ('com.nio.vom:router-host:1.0.1-SNAPSHOT@aar'){
+        transitive true
+    }
+    compile 'com.nio.vom:router-annotation:1.0.1-SNAPSHOT@jar'
+
+
 //
 //    annotationProcessor "com.github.yjfnypeu.Router:router-compiler:${ROUTER_VERSION}"
 //    annotationProcessor "com.jakewharton:butterknife-compiler:${ButterKnife_version}"

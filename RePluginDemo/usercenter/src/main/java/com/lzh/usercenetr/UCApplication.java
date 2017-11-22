@@ -14,6 +14,6 @@ public class UCApplication extends Application {
     public void onCreate() {
         super.onCreate();
         RouterConfiguration.get().addRouteCreator(new RouterRuleCreator());
-        PluginRouterConfiguration.init("com.lzh.replugindemo", "usercenter", this);
+        PluginRouterConfiguration.init("com.nio.toolkit", "usercenter", this);
     }
 }

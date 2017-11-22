@@ -1,14 +1,12 @@
-include ':app', ':usercenter', ':remote'
-include ':plugina'
+include ':usercenter'
 
-// 添加外部库
-def externalModules = [
-        ':core',
-        ':plugin',
-        ':host'
-] as String[]
-
-include externalModules
-externalModules.each {
-    project(it).projectDir = new File("../${it.substring(1)}")
-}
+//// 添加外部库
+//def externalModules = [
+//        ':core',
+//        ':plugin',
+//        ':host'
+//] as String[]
+//include externalModules
+//externalModules.each {
+//    project(it).projectDir = new File("../${it.substring(1)}")
+//}
